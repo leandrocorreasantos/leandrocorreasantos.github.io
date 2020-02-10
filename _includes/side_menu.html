@@ -1,0 +1,73 @@
+<aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Maringá, PR</li>
+                                <li><i class="fab fa-whatsapp"></i><span class="sr-only">Telefone (whatsapp):</span><a href="#" noindex nofollow>(44)98811-4321</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
+
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Habilidades</h2>
+                        <div class="content">
+                            <!-- <p class="intro"></p> -->
+
+                            <div class="skillset" id="skillset_list">
+                                <canvas id="bar-chart-horizontal" width="100%" height="100"></canvas>
+                            </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Formação</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Sistemas de Informação</h3>
+                                <h4 class="university">Unipar - Universidade Paranaense <em>(não concluído)</em> <span class="year">(2006-2010)</span></h4>
+                            </div><!--//item--><div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Geografia</h3>
+                                <h4 class="university">Universiade Estadual de Ponta Grossa - UEPG <span class="year">(2011-2014)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Idiomas</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>Espanhol:</strong></span>
+                                    <span class="level">Avançado<br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Inglês:</strong></span>
+                                    <span class="level">Intermediário <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="blog aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Últimos Artigos</h2>
+                        <div class="items">
+                        {% for post in site.posts limit:4 %}
+                            <div class="item">
+                                <h3 class="title">{{ post.title }}</h3>
+                                <p>{{ post.excerpt }}</p>
+                                <a href="{{post.url}}">Continue lendo...</a>
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div><!--//section-inner-->
+                </aside><!--//section-->

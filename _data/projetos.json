@@ -1,0 +1,10 @@
+[
+    {
+        "nome": "API Empregos",
+        "descricao": "Desenvolvimento de API para operações CRUD na seção de empregos. Desenvolvido em linguagem Python através do uso do framework Flask e bancos de dados PostgreSQL.",
+        "empresa": "Portal da Cidade",
+        "url": "http://umuarama.portaldacidade.com/empregos",
+        "capa": "assets/images/projects/portaldacidade600x450.png",
+        "imagem": "assets/images/projects/portaldacidade600x450.png",
+    },
+]

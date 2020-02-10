@@ -1,0 +1,24 @@
+---
+layout: default
+title: projetos
+permalink: /projetos.html
+---
+<section class="about section">
+    <div class="section-inner">
+        <h2 class="heading">Projetos</h2>
+        <div class="content">
+            {% for projeto in site.data.projetos limit:5 %}
+            <div class="item row">
+                <a class="col-md-4 col-12" href="{{projeto.url}}" target="_blank">
+                <img class="img-fluid project-image" src="{{projeto.imagem}}" alt="{{projeto.nome}}" />
+                </a>
+                <div class="desc col-md-8 col-12">
+                    <h3 class="title"><a href="{{projeto.url}}" target="_blank">{{projeto.empresa}} - {{projeto.nome}}</a></h3>
+                    <p class="mb-2">{{projeto.descricao}}</p>
+                    <p><a class="more-link" href="{{projeto.url}}" target="_blank"><i class="fas fa-external-link-alt"></i>Visualizar Projeto</a></p>
+                </div><!--//desc-->
+            </div><!--//item-->
+            {% endfor %}
+        </div>
+    </div>
+</section>
