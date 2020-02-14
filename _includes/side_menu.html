@@ -64,8 +64,8 @@
                         {% for post in site.posts limit:4 %}
                             <div class="item">
                                 <h3 class="title">{{ post.title }}</h3>
-                                <p>{{ post.excerpt }}</p>
-                                <a href="{{post.url}}">Continue lendo...</a>
+                                <p>{{ post.excerpt | strip_html }}</p>
+                                <a href="{{ post.url }}">Continuar lendo...</a>
                             </div>
                         {% endfor %}
                         </div>

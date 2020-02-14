@@ -1,0 +1,33 @@
+---
+layout: default
+title: Blog
+permalink: /blog.html
+---
+<section class="about section">
+    <div class="section-inner">
+        <h2 class="heading">Blog</h2>
+        <div class="content">
+            {% for post in site.posts limit:10 %}
+            <div class="item row">
+                <a class="col-md-4 col-12" href="{{ post.url }}">
+					<img class="img-fluid project-image" src="{{ post.image }}" alt="{{ post.title }}" />
+                </a>
+                <div class="desc col-md-8 col-12">
+                    <p class="mb-2">{{ post.excerpt }}</p>
+                    <p>
+                        <a class="more-link" href="{{ post.url }}">
+                            <i class="fas fa-external-link-alt"></i> Continuar lendo...
+                        </a>
+                    </p>
+                </div><!--//desc-->
+            </div><!--//item-->
+            {% if forloop.index % 1 == 0 %}
+            <div class="section-inner">
+                <iframe data-aa="1326655" src="//ad.a-ads.com/1326655?size=468x60" scrolling="no" style="width:468px; height:60px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+            </div>
+
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
