@@ -1,0 +1,28 @@
+---
+layout: post
+title: Usando Jekyll em sites estáticos
+image: assets/images/posts/portaldacidade600x450.png
+categories: frontend
+tags: [jekyll, html]
+excerpt_separator: <!--more-->
+---
+
+{% if page.layout == 'post' %}
+    <h2 class="heading">Usando Jekyll em sites estáticos</h2>
+{% endif %}
+<div class="content">
+    <p>Desenvolver sites estáticos é algo muito trabalhoso (além de obsoleto).
+    Os sites dinâmicos são muito mais atraentes ao cliente e mais fáceis de
+    ser manter.</p>
+    <!--more-->
+    <p>Mas existem casos em que você necessita de um site totalmente (ou parcialmente)
+     estático.</p>
+    <p>Para isso, você pode utilizar o <a href="https://jekyllrb.com/" alt="Jekyll" target="_blank">Jekyll</a>.</p>
+    <p>Trata-se de uma gem do ruby que permite desenvolver sites estáticos de forma
+    mais simples. Os trechos repetitivos podem ser divididos em partes e incluídos
+    no layout padrão, entre outras facilidades.</p>
+    <p>Este blog que você está lendo, por exemplo, foi feito utilizando o Jekyll.
+    Dê uma olhadinha no <a href="https://github.com/leandrocorreasantos/leandrocorreasantos.github.io" target="_blank">código-fonte</a>.</p>
+    <p>Fique à vontade :-)</p>
+</div>
+
