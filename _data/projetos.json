@@ -1,10 +1,19 @@
 [
+	{
+		"nome": "Website Institucional",
+		"descricao": "Desenvolvimento de website para a empresa Life Bartenders utilizando framework Django e banco de dados MySQL. O site conta com agenda e galeria de eventos.",
+		"empresa": "Life Bartenders",
+		"url": "http://lifebartenders.com.br",
+		"capa": "assets/images/projects/lifebartenders600x450.png",
+		"imagem": "assets/images/projects/lifebartenders600x450.png"
+
+	},
     {
         "nome": "API Empregos",
         "descricao": "Desenvolvimento de API para operações CRUD na seção de empregos. Desenvolvido em linguagem Python através do uso do framework Flask e bancos de dados PostgreSQL.",
         "empresa": "Portal da Cidade",
         "url": "http://umuarama.portaldacidade.com/empregos",
         "capa": "assets/images/projects/portaldacidade600x450.png",
-        "imagem": "assets/images/projects/portaldacidade600x450.png",
-    },
+        "imagem": "assets/images/projects/portaldacidade600x450.png"
+    }
 ]
