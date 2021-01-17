@@ -1,4 +1,4 @@
 name: Leandro Correa dos Santos
 paginate: 5
 permalink: /:categories/:title
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]

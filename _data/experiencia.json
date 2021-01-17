@@ -22,5 +22,5 @@
         "termino":"20/02/2020",
         "funcao":"Desenvolvimento de APIs para sistema de CMS da empresa",
         "tecnologias": "Python, Flask, Docker, PostgreSQL e JQuery"
-    },
+    }
 ]
