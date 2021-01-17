@@ -6,7 +6,7 @@ title: Portfólio
                     <div class="section-inner">
                         <h2 class="heading">Sobre Mim</h2>
                         <div class="content">
-                            <p>Desenvolvedor web desde 2009 com experiência com programação PHP e Python, usando bancos de dados MySQL e PostgreSQL. Atualmente trabalho com Python utilizando o framework Flask e estou aprendendo Angular2.</p>
+                            <p>Desenvolvedor web desde 2009 com experiência com programação PHP e Python, usando bancos de dados MySQL e PostgreSQL. Atualmente trabalho com Python utilizando o frameworks Flask e Django, enquanto estudo Angular 10 para me tornar Full Stack.</p>
 
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -57,17 +57,16 @@ title: Portfólio
                 </section><!--//section-->
                 <section class="github section">
                     <div class="section-inner">
-                        <h2 class="heading">Meu GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
+                        <h2 class="heading">Minha Atividade no GitHub</h2>
 
-                        <div id="github-graph" class="github-graph">
-
-                        </div><!--//github-graph-->
-
-                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.
-                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
+						<div class="github-calendar"></div>
 
                     </div><!--//secton-inner-->
                 </section><!--//section-->
+
+	<!-- new github calendar -->
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+				<script type="text/javascript">
+					GitHubCalendar('.github-calendar', 'leandrocorreasantos', {'responsive': true});
+				</script>

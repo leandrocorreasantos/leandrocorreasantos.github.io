@@ -79,7 +79,7 @@
 								</div>
 
 								<div class="item">
-									<h3 class="level-title">Angular 2
+									<h3 class="level-title">Angular 10
 									<span class="level-label" data-toggle="tooltip"
 										data-placement="left" data-animation="true"
 										title="Framework Javascript Angular 2">
@@ -126,20 +126,5 @@
                                 </li><!--//item-->
                             </ul>
                         </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <aside class="blog aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Últimos Artigos</h2>
-                        <div class="items">
-                        {% for post in site.posts limit:4 %}
-                            <div class="item">
-                                <h3 class="title">{{ post.title }}</h3>
-                                <p>{{ post.excerpt | strip_html }}</p>
-                                <a href="{{ post.url }}">Continuar lendo...</a>
-                            </div>
-                        {% endfor %}
-                        </div>
                     </div><!--//section-inner-->
                 </aside><!--//section-->
