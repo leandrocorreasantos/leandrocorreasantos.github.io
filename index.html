@@ -3,70 +3,56 @@ layout: default
 title: Portfólio
 ---
 <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">Sobre Mim</h2>
-                        <div class="content">
-                            <p>Desenvolvedor web desde 2009 com experiência com programação PHP e Python, usando bancos de dados MySQL e PostgreSQL. Atualmente trabalho com Python utilizando o frameworks Flask e Django, enquanto estudo Angular 10 para me tornar Full Stack.</p>
+    <div class="section-inner">
+        <h2 class="heading">Sobre Mim</h2>
+        <div class="content">
+            <p>Desenvolvedor web desde 2009 com experiência com programação PHP
+                e Python, usando bancos de dados MySQL, MongoDB e PostgreSQL.
+                Atualmente trabalho com Python, desenvolvendo scripts
+                serverless para sistemas de teleatendimento.
+            </p>
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
+        </div><!--//content-->
+    </div><!--//section-inner-->
+</section><!--//section-->
 
-                <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Últimos Projetos</h2>
-                        <div class="content">
-                            {% for projeto in site.data.projetos  limit:1 %}
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="{{ projeto.url }}" target="_blank">{{ projeto.nome }}</a></h3>
-                                <p class="summary">{{ projeto.empresa }}</p>
-                                <div class="featured-image has-ribbon">
-                                    <a href="{{ projeto.url }}" target="_blank">
-                                    <img class="img-fluid project-image" src="{{ projeto.capa }}" alt="{{ projeto.nome }}" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
-                                </div>
+<section class="experience section">
+    <div class="section-inner">
+        <h2 class="heading">Experiência Profissional</h2>
+        <div class="content">
+            {% for emprego in site.data.experiencia %}
+                <div class="item">
+                    <h3 class="title"> {{ emprego.cargo }} -
+                        <span class="place"><a href="#">
+                            {{ emprego.empresa }}</a>
+                        </span>
+                        <span class="year">
+                            ({{ emprego.inicio }}
+                            {% if emprego.termino %}
+                             - {{ emprego.termino }})
+                            {% endif %}
+                        </span>
+                    </h3>
+                    <p>{{ emprego.funcao }}</p>
+                    <p>Tecnologias utilizadas: {{ emprego.tecnologias }}</p>
+                </div><!--//item-->
+            {% endfor %}
 
-                                <div class="desc text-left">
-                                    <p>{{ projeto.descricao }}</p>
-                                </div><!--//desc-->
-                                <a class="btn btn-cta-secondary" href="/projetos.html"><i class="fas fa-eye"></i> Ver Mais</a>
-                            </div><!--//item-->
-                            {% endfor %}
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
+        </div><!--//content-->
+    </div><!--//section-inner-->
+</section><!--//section-->
+<section class="github section">
+    <div class="section-inner">
+        <h2 class="heading">Minha Atividade no GitHub</h2>
 
+		<div class="github-calendar"></div>
 
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Experiência Profissional</h2>
-                        <div class="content">
-                            {% for emprego in site.data.experiencia %}
-                            <div class="item">
-                                <h3 class="title"> {{ emprego.cargo }} - <span class="place"><a href="#">{{ emprego.empresa }}</a></span> <span class="year">({{ emprego.inicio }} - {{ emprego.termino }})</span></h3>
-                                <p>{{ emprego.funcao }}</p>
-                                <p>Tecnologias utilizadas: {{ emprego.tecnologias }}</p>
-                            </div><!--//item-->
-                            {% endfor %}
+    </div><!--//secton-inner-->
+</section><!--//section-->
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-                <section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">Minha Atividade no GitHub</h2>
+<!-- new github calendar -->
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
-						<div class="github-calendar"></div>
-
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
-
-	<!-- new github calendar -->
-	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
-				<script type="text/javascript">
-					GitHubCalendar('.github-calendar', 'leandrocorreasantos', {'responsive': true});
-				</script>
+<script type="text/javascript">
+	GitHubCalendar('.github-calendar', 'leandrocorreasantos', {'responsive': true});
+</script>

@@ -1,26 +1,34 @@
 [
     {
-        "cargo":"Desenvolvedor Web",
-        "empresa":"Prestige Agência Digital",
-        "inicio":"04/05/2009",
-        "termino":"04/06/2012",
-        "funcao":"Desenvolvimento de sites, sistemas e lojas virtuais",
-        "tecnologias": "PHP, MySQL, PostgreSQL, Javascript e JQuery"
+        "cargo": "Desenvolvedor Python",
+        "empresa": "Spintec",
+        "inicio": "25/10/2021",
+        "termino": null,
+        "funcao": "Desenvolvedor Python",
+        "tecnologias": "Python, MongoDB, DynamoDB, AWS e Redis"
     },
     {
-        "cargo":"Desenvolvedor Web",
-        "empresa":"Winsite Agência Web",
-        "inicio":"04/08/2012",
-        "termino":"04/10/1013",
-        "funcao":"Desenvolvimento de sites e sistemas web",
+        "cargo": "Desenvolvedor Python",
+        "empresa": "Prestige Agência Digital",
+        "inicio": "01/01/2018",
+        "termino": "20/02/2020",
+        "funcao": "Desenvolvimento de APIs para sistema de CMS da empresa",
+        "tecnologias": "Python, Flask, Docker, PostgreSQL e JQuery"
+    },
+    {
+        "cargo": "Desenvolvedor Web",
+        "empresa": "Winsite Agência Web",
+        "inicio": "04/08/2012",
+        "termino": "04/10/1013",
+        "funcao": "Desenvolvimento de sites e sistemas web",
         "tecnologias": "PHP, MySQL, CakePHP 2, Javascript e JQuery"
     },
     {
-        "cargo":"Desenvolvedor Python",
-        "empresa":"Prestige Agência Digital",
-        "inicio":"01/01/2018",
-        "termino":"20/02/2020",
-        "funcao":"Desenvolvimento de APIs para sistema de CMS da empresa",
-        "tecnologias": "Python, Flask, Docker, PostgreSQL e JQuery"
+        "cargo": "Desenvolvedor Web",
+        "empresa": "Prestige Agência Digital",
+        "inicio": "04/05/2009",
+        "termino": "04/06/2012",
+        "funcao": "Desenvolvimento de sites, sistemas e lojas virtuais",
+        "tecnologias": "PHP, MySQL, PostgreSQL, Javascript e JQuery"
     }
 ]
