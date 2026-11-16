@@ -1,0 +1,59 @@
+baseURL = "https://leandrocorreasantos.github.io/"
+title = "Leandro Correa dos Santos"
+locale = "pt-BR"
+defaultContentLanguage = "pt-br"
+theme = "hugo-theme-m11c"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 8
+  path = "pagina"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "geopolitica"
+    name = "Geopolítica"
+    url = "/categories/geopolitica/"
+    weight = 2
+  [[menu.main]]
+    identifier = "financas"
+    name = "Finanças"
+    url = "/categories/financas/"
+    weight = 3
+  [[menu.main]]
+    identifier = "tecnologia"
+    name = "Tecnologia"
+    url = "/categories/tecnologia/"
+    weight = 4
+  [[menu.main]]
+    identifier = "sobre"
+    name = "Sobre"
+    url = "/about/"
+    weight = 5
+
+[params]
+  author = "Leandro Correa dos Santos"
+  description = "Análises e reflexões sobre geopolítica, finanças e tecnologia."
+  avatar = "avatar.png"
+  favicon = "/favicon.svg"
+  menu_item_separator = " · "
+
+  [[params.social]]
+    icon = "brand-github"
+    name = "GitHub"
+    url = "https://github.com/leandrocorreasantos"
+
+  [[params.social]]
+    icon = "brand-linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/leandro-santos-5696802a/"
+
+  [[params.social]]
+    icon = "mail"
+    name = "E-mail"
+    url = "mailto:leandro.admo@gmail.com"
