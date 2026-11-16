@@ -3,6 +3,7 @@ title = "{{ replace .File.ContentBaseName "-" " " | title }}"
 date = "{{ .Date }}"
 draft = true
 description = ""
-categories = ["Tecnologia"]
+# Categorias: Geopolítica, Finanças, Tecnologia
+categories = []
 tags = []
 +++
