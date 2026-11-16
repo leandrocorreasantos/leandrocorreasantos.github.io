@@ -39,7 +39,7 @@ enableRobotsTXT = true
 [params]
   author = "Leandro Correa dos Santos"
   description = "Análises e reflexões sobre geopolítica, finanças e tecnologia."
-  avatar = "avatar.png"
+  avatar = "avatar.jpg"
   favicon = "/favicon.svg"
   menu_item_separator = " · "
 
