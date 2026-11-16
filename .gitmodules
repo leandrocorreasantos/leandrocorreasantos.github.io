@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-m11c"]
+	path = themes/hugo-theme-m11c
+	url = https://github.com/leandrocorreasantos/hugo-theme-m11c.git

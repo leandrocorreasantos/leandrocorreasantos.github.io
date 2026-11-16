@@ -1,4 +1,0 @@
-name: Leandro Correa dos Santos
-paginate: 5
-permalink: /:categories/:title
-plugins: [jekyll-paginate]
